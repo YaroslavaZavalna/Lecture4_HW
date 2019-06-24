@@ -115,17 +115,17 @@ public class Robot implements RobotFeature, PlanetA, PlanetB, PlanetC {
 
     @Override
     public void seaClimat() {
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Activating waterproof power~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Activating waterproof power~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~ Aliens have come to the WaterPlanet ~~~~~~~~~~~~~~~~~~~\n");
     }
 
     @Override
     public void windClimat() {
-        System.out.println("================================================ Activating windproof power ================================================\n");
+        System.out.println("================================================ Activating windproof power ================================================\n==================== Aliens have come to the WindPlanet==================== \n");
     }
 
     @Override
     public void sunClimat() {
-        System.out.println("***********************************************  Activating sunproof power   ***********************************************\n");
+        System.out.println("***********************************************  Activating sunproof power   ***********************************************\n********************* Aliens have come to the SunPlanet *********************\n ");
 
     }
 }

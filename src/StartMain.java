@@ -30,6 +30,7 @@ public class StartMain {
         String answer = sc.nextLine();
         if (answer.equals("a")) {
             Robot robot = new Robot(true, false);
+            System.out.println();
             System.out.println("Let`s test me!");
             robot.formGen();
             robot.move();
@@ -63,28 +64,28 @@ public class StartMain {
             System.out.println("This kind of robot can search for some news. Would you like to have \na) good news \nb) bad news\nc)both");
             String answer3 = sc.nextLine();
             if (answer3.equals("a")) {
-                AndroidBot android = new AndroidBot(true, false, "good news", true);
+                AndroidBot android = new AndroidBot(true, false,  true);
                 System.out.println("Let`s test me!");
                 android.formGen();
                 android.move();
                 android.talk();
-                android.searchNews();
+                android.searchNews("good news");
                 android.shoot();
             } else if (answer3.equals("b")) {
-                AndroidBot android2 = new AndroidBot(true, false, "bad news", true);
+                AndroidBot android2 = new AndroidBot(true, false,  true);
                 System.out.println("Let`s test me!");
                 android2.formGen();
                 android2.move();
                 android2.talk();
-                android2.searchNews();
+                android2.searchNews("bad news");
                 android2.shoot();
             } else if (answer3.equals("c")) {
-                AndroidBot android3 = new AndroidBot(true, false, "both", true);
+                AndroidBot android3 = new AndroidBot(true, false,  true);
                 System.out.println("Let`s test me!");
                 android3.formGen();
                 android3.move();
                 android3.talk();
-                android3.searchNews();
+                android3.searchNews("both");
                 android3.shoot();
 
             }

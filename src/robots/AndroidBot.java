@@ -2,24 +2,24 @@ package robots;
 
 import robotInstances.Android;
 
-public class AndroidBot extends DomesticBot implements Android {
+public class AndroidBot extends Robot implements Android {
 
 
     private boolean hasInternet;
 
-    public AndroidBot(boolean isKind, boolean turnedOff,String purpose, boolean hasInternet) {
-        super(isKind, turnedOff, purpose);
+    public AndroidBot(boolean isKind, boolean turnedOff, boolean hasInternet) {
+        super(isKind, turnedOff);
         this.hasInternet = hasInternet;
     }
 
     @Override
-    public void searchNews() {
+    public void searchNews(String answer) {
         if(hasInternet) {
-            if (getPurpose() == "good news") {
+            if (answer.equals("good news")) {
                 System.out.println("Check your e-mail box for good news!");
-            } else if (getPurpose() == "bad news") {
+            } else if (answer.equals("bad news") ){
                 System.out.println("Check your e-mail box for bad news!");
-            } else if (getPurpose() == "both") {
+            } else if (answer.equals("both") ){
                 System.out.println("Check your e-mail box for the news!");
             }
         }
@@ -29,4 +29,5 @@ public class AndroidBot extends DomesticBot implements Android {
     public boolean isHasInternet() {
         return hasInternet;
     }
+
 }
