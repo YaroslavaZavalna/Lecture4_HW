@@ -1,16 +1,33 @@
 package robots;
 
-import interfaces.RobotFeature;
+import planetInstances.PlanetA;
+import planetInstances.PlanetB;
+import planetInstances.PlanetC;
+import robotInstances.RobotFeature;
 
-public class Robot implements RobotFeature {
+import static robots.Aliens.planetRandom;
+
+public class Robot implements RobotFeature, PlanetA, PlanetB, PlanetC {
     private boolean isKind;
     private boolean turnedOff;
+
     private Form form;
+
 
 
     public Robot(boolean isKind, boolean turnedOff) {
         this.isKind = isKind;
         this.turnedOff = turnedOff;
+
+        char planet = Aliens.planetRandom();
+        if(planet=='A'){
+            seaClimat();
+        }else if(planet=='B'){
+            windClimat();
+        }else if(planet=='C'){
+            sunClimat();
+        }
+
     }
 
     @Override
@@ -96,4 +113,19 @@ public class Robot implements RobotFeature {
         this.turnedOff = turnedOff;
     }
 
+    @Override
+    public void seaClimat() {
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Activating waterproof power~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    }
+
+    @Override
+    public void windClimat() {
+        System.out.println("================================================ Activating windproof power ================================================\n");
+    }
+
+    @Override
+    public void sunClimat() {
+        System.out.println("***********************************************  Activating sunproof power   ***********************************************\n");
+
+    }
 }

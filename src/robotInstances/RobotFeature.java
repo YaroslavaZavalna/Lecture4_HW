@@ -1,4 +1,4 @@
-package interfaces;
+package robotInstances;
 
 public interface RobotFeature {
     void shoot();

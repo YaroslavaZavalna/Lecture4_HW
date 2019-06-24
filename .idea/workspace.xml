@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d2c4b3-e568-43c1-aeea-82df1bae340f" name="Default Changelist" comment="" />
+    <list default="true" id="54d2c4b3-e568-43c1-aeea-82df1bae340f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StartMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/planetInstances/PlanetA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/planetInstances/PlanetB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/planetInstances/PlanetC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robots/Aliens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/interfaces/Android.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/interfaces/Domestic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/interfaces/RobotFeature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/AndroidBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/AndroidBot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/DomesticBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/DomesticBot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/Robot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Android.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robotInstances/Android.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Domestic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robotInstances/Domestic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/RobotFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robotInstances/RobotFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robots/AndroidBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robots/AndroidBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robots/DomesticBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robots/DomesticBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robots/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robots/Robot.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,13 +33,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1MzevlX9v6VWmR2bdfBfojufSvm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -30,9 +60,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="W2_L4_HW" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SimpleMain" />
       <module name="W2_L4_HW" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -41,6 +78,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SimpleMain" />
       </list>
     </recent_temporary>
   </component>
@@ -56,5 +94,18 @@
       <updated>1561192085714</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,6 +1,6 @@
 package robots;
 
-import interfaces.Domestic;
+import robotInstances.Domestic;
 
 
 public class DomesticBot extends Robot implements Domestic {

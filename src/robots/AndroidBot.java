@@ -1,6 +1,6 @@
 package robots;
 
-import interfaces.Android;
+import robotInstances.Android;
 
 public class AndroidBot extends DomesticBot implements Android {
 
