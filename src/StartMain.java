@@ -11,15 +11,30 @@ public class StartMain {
         System.out.println("Press 's' to begin");
         Scanner sc = new Scanner(System.in);
         String start = sc.nextLine();
-        while(start.equals("s")){
-            start();
-            System.out.println("Would you like to exit?(y/n)");
-            String exit = sc.nextLine();
-            if(exit.equals("y")){
+        String stemp = null;
+
+        while (!start.equals("s")) {
+            System.out.println("You`ve pressed wrong key! Try again!");
+            String start1 = sc.nextLine();
+            if(start1.equals("s")){
+                stemp = start1;
                 break;
-            }else if(exit.equals("n")){
-                continue;
             }
+        }
+        while (stemp.equals("s")) {
+                start();
+                System.out.println("Would you like to exit?(y/n)");
+                String exit = sc.nextLine();
+                while(!exit.equals("y") || !exit.equals("n")){
+                    System.out.println("You`ve pressed wrong key! Try again!");
+                    String exit2 = sc.nextLine();
+                    if (exit2.equals("y")) {
+                        break;
+                    } else if (exit2.equals("n")) {
+                        break;
+                    }
+                }
+
         }
     }
 
@@ -28,6 +43,7 @@ public class StartMain {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hi! What kind of robot would you like to have?\n a) Standart robot\n b) Domestic robot\n c) Android\n");
         String answer = sc.nextLine();
+
         if (answer.equals("a")) {
             Robot robot = new Robot(true, false);
             System.out.println();
@@ -87,7 +103,6 @@ public class StartMain {
                 android3.talk();
                 android3.searchNews("both");
                 android3.shoot();
-
             }
         }
     }
