@@ -3,11 +3,12 @@ package robots;
 import planetInstances.PlanetA;
 import planetInstances.PlanetB;
 import planetInstances.PlanetC;
+import robotInstances.RobotAppearance;
 import robotInstances.RobotFeature;
 
 import static robots.Aliens.planetRandom;
 
-public class Robot implements RobotFeature, PlanetA, PlanetB, PlanetC {
+public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, PlanetC {
     private boolean isKind;
     private boolean turnedOff;
 

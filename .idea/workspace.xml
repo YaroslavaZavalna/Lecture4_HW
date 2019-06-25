@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54d2c4b3-e568-43c1-aeea-82df1bae340f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/StartMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/StartMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/robotInstances/Android.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/robotInstances/Android.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/AndroidBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/W2_L4_HW/robots/AndroidBot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robotInstances/Android.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robotInstances/Android.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robots/AndroidBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robots/AndroidBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robots/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robots/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robots/Aliens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/robots/Aliens.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
