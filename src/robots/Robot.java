@@ -9,12 +9,14 @@ import robotInstances.RobotFeature;
 import static robots.Aliens.planetRandom;
 
 public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, PlanetC {
+    private static final int MAX = 12;
+    private static final int NZERO = 12;
+    private static final int SHOOT_MAGIC = 10;
+
     private boolean isKind;
     private boolean turnedOff;
 
     private Form form;
-
-
 
     public Robot(boolean isKind, boolean turnedOff) {
         this.isKind = isKind;
@@ -33,7 +35,7 @@ public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, P
 
     @Override
     public void shoot() {
-        int i = (int)(Math.random()*10);
+        int i = (int)(Math.random()*SHOOT_MAGIC);
 
         if(i != 0){
             System.out.println("Let the party begin! I am shooting presents!");
@@ -78,7 +80,7 @@ public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, P
 
     @Override
     public void formGen() {
-        int i = (int)(Math.random()*12+1);
+        int i = (int)(Math.random()*MAX+NZERO);
         if(i>=1 && i<=3){
             form = new Form(1.5, 45, "red", "tin", "Form #1");
             System.out.println("Now robot has "+ form.getFormName()+ " : "+ form.getColor()
