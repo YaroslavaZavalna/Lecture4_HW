@@ -11,17 +11,17 @@ public class StartMain {
         System.out.println("Press 's' to begin");
         Scanner sc = new Scanner(System.in);
         String start = sc.nextLine();
-        String stemp = null;
 
         while (!start.equals("s")) {
             System.out.println("You`ve pressed wrong key! Try again!");
             String start1 = sc.nextLine();
             if(start1.equals("s")){
-                stemp = start1;
+//                start = start1;
                 break;
             }
         }
-        while (stemp.equals("s")) {
+
+        while (true) {
                 start();
                 System.out.println("Would you like to exit?(y/n)");
                 String exit = sc.nextLine();
