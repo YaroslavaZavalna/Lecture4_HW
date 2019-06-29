@@ -6,14 +6,14 @@ public class Form {
     private int weight;
     private String color;
     private String material;
-    private String formName;
+    private String form;
 
-    public Form(double height, int weight, String color, String material, String formName) {
+    public Form(double height, int weight, String color, String material, String form) {
         this.height = height;
         this.weight = weight;
         this.color = color;
         this.material = material;
-        this.formName = formName;
+        this.form = form;
     }
 
     public double getHeight() {
@@ -48,11 +48,11 @@ public class Form {
         this.material = material;
     }
 
-    public String getFormName() {
-        return formName;
+    public String getForm() {
+        return form;
     }
 
-    public void setFormName(String formName) {
-        this.formName = formName;
+    public void setForm(String form) {
+        this.form = form;
     }
 }

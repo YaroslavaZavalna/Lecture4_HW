@@ -6,12 +6,12 @@ import planetInstances.PlanetC;
 import robotInstances.RobotAppearance;
 import robotInstances.RobotFeature;
 
-import static robots.Aliens.planetRandom;
-
 public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, PlanetC {
     private static final int MAX = 12;
-    private static final int NZERO = 12;
+    private static final int RANGE = 1;
     private static final int SHOOT_MAGIC = 10;
+    private static final int HIGH_BOUND = 8;
+    private static final int MID_BOUND = 3;
 
     private boolean isKind;
     private boolean turnedOff;
@@ -24,13 +24,12 @@ public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, P
 
         char planet = Aliens.planetRandom();
         if(planet=='A'){
-            seaClimat();
+            seaClimate();
         }else if(planet=='B'){
-            windClimat();
+            windClimate();
         }else if(planet=='C'){
-            sunClimat();
+            sunClimate();
         }
-
     }
 
     @Override
@@ -42,16 +41,14 @@ public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, P
             System.out.println("   |><|    \n"+
                                "   ПППП     \n"+
                                "   ПППП     \n");
-
-        }else if(i==0){
+        }else{
             System.out.println("I gonna kill you, silly humans!\nJUST RUUUUUUUUUUUUUUUUUN!!!!!!\n");
         }
-
     }
 
     @Override
-    public void talk() {
-        if(isTurnedOff()==false) {
+    public void speak() {
+        if(!isTurnedOff()) {
             System.out.println("      >-<        ");
             System.out.println("   =========    ");
             System.out.println("   | +   + |    ");
@@ -66,7 +63,7 @@ public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, P
 
     @Override
     public void move() {
-        if(isTurnedOff()==false) {
+        if(!isTurnedOff()) {
             System.out.println("    ____    \n" +
                     "    |  *|   \n" +
                     "    -----   \n" +
@@ -79,25 +76,24 @@ public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, P
     }
 
     @Override
-    public void formGen() {
-        int i = (int)(Math.random()*MAX+NZERO);
-        if(i>=1 && i<=3){
+    public void formGenerator() {
+        int i = (int)(Math.random()*MAX+ RANGE);
+        if(i>HIGH_BOUND){
             form = new Form(1.5, 45, "red", "tin", "Form #1");
-            System.out.println("Now robot has "+ form.getFormName()+ " : "+ form.getColor()
+            System.out.println("Now robot has "+ form.getForm()+ " : "+ form.getColor()
                         +", made of "+ form.getMaterial()+ ", "+ form.getHeight() + " m high and "
                         + form.getWeight()+ " kg weight\n");
-        }else if(i>=4 && i<=8){
+        }else if(i>MID_BOUND){
             form = new Form(1.75, 56, "green", "steel", "Form #2");
-              System.out.println("Now robot has "+ form.getFormName()+ " : "+ form.getColor()
+              System.out.println("Now robot has "+ form.getForm()+ " : "+ form.getColor()
                         +", made of "+ form.getMaterial()+ ", "+ form.getHeight() + " m high and "
                         + form.getWeight()+ " kg weight\n");
-        }else if(i>=9 && i<=12){
+        }else {
             form = new Form(2.0, 67, "blue", "plastic", "Form #3");
-            System.out.println("Now robot has "+ form.getFormName()+ " : "+ form.getColor()
+            System.out.println("Now robot has "+ form.getForm()+ " : "+ form.getColor()
                         +", made of "+ form.getMaterial()+ ", "+ form.getHeight() + " m high and "
                         + form.getWeight()+ " kg weight\n");
         }
-
     }
 
     public boolean isKind() {
@@ -117,17 +113,17 @@ public class Robot implements RobotFeature, RobotAppearance, PlanetA, PlanetB, P
     }
 
     @Override
-    public void seaClimat() {
+    public void seaClimate() {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Activating waterproof power~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~ Aliens have come to the WaterPlanet ~~~~~~~~~~~~~~~~~~~\n");
     }
 
     @Override
-    public void windClimat() {
+    public void windClimate() {
         System.out.println("================================================ Activating windproof power ================================================\n==================== Aliens have come to the WindPlanet==================== \n");
     }
 
     @Override
-    public void sunClimat() {
+    public void sunClimate() {
         System.out.println("***********************************************  Activating sunproof power   ***********************************************\n********************* Aliens have come to the SunPlanet *********************\n ");
 
     }

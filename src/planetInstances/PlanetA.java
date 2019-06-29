@@ -1,5 +1,5 @@
 package planetInstances;
 
 public interface PlanetA {
-    void seaClimat();
+    void seaClimate();
 }

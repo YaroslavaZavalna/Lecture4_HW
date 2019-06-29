@@ -26,7 +26,6 @@ public class DomesticBot extends Robot implements Domestic {
                     "  O o  O     O\n" +
                     "o     O   o o\n (These are bubbles)\n");
         }
-
     }
 
     public String getPurpose() {

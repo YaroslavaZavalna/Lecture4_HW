@@ -1,5 +1,5 @@
 package planetInstances;
 
 public interface PlanetB {
-    void windClimat();
+    void windClimate();
 }

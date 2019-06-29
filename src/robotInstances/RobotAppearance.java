@@ -1,5 +1,5 @@
 package robotInstances;
 
 public interface RobotAppearance {
-    void formGen();
+    void formGenerator();
 }

@@ -25,7 +25,6 @@ public class AndroidBot extends Robot implements Android {
         }
     }
 
-
     public boolean isHasInternet() {
         return hasInternet;
     }

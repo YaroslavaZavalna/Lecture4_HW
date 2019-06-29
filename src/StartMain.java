@@ -25,13 +25,15 @@ public class StartMain {
                 start();
                 System.out.println("Would you like to exit?(y/n)");
                 String exit = sc.nextLine();
-                while(!exit.equals("y") || !exit.equals("n")){
-                    System.out.println("You`ve pressed wrong key! Try again!");
-                    String exit2 = sc.nextLine();
-                    if (exit2.equals("y")) {
-                        break;
-                    } else if (exit2.equals("n")) {
-                        break;
+                while(!exit.equals("y")){
+                    if(!exit.equals("n")) {
+                        System.out.println("You`ve pressed wrong key! Try again!");
+                        String exit2 = sc.nextLine();
+                        if (exit2.equals("y")) {
+                            break;
+                        } else if (exit2.equals("n")) {
+                            break;
+                        }
                     }
                 }
 
@@ -48,9 +50,9 @@ public class StartMain {
             Robot robot = new Robot(true, false);
             System.out.println();
             System.out.println("Let`s test me!");
-            robot.formGen();
+            robot.formGenerator();
             robot.move();
-            robot.talk();
+            robot.speak();
             robot.shoot();
         } else if (answer.equals("b")) {
             while(true) {
@@ -59,24 +61,23 @@ public class StartMain {
                 if (answer2.equals("a")) {
                     DomesticBot domBot = new DomesticBot(true, false, "vacuum cleaner");
                     System.out.println("Let`s test me!");
-                    domBot.formGen();
+                    domBot.formGenerator();
                     domBot.move();
-                    domBot.talk();
+                    domBot.speak();
                     domBot.clean();
                     domBot.shoot();
                     break;
                 } else if (answer2.equals("b")) {
                     DomesticBot domBot2 = new DomesticBot(true, false, "dishwasher");
                     System.out.println("Let`s test me!");
-                    domBot2.formGen();
+                    domBot2.formGenerator();
                     domBot2.move();
-                    domBot2.talk();
+                    domBot2.speak();
                     domBot2.clean();
                     domBot2.shoot();
                     break;
                 }else{
                     System.out.println("You`ve pressed wrong key! Try again!");
-                    continue;
                 }
             }
         } else if (answer.equals("c")) {
@@ -86,33 +87,32 @@ public class StartMain {
                 if (answer3.equals("a")) {
                     AndroidBot android = new AndroidBot(true, false, true);
                     System.out.println("Let`s test me!");
-                    android.formGen();
+                    android.formGenerator();
                     android.move();
-                    android.talk();
+                    android.speak();
                     android.searchNews("good news");
                     android.shoot();
                     break;
                 } else if (answer3.equals("b")) {
                     AndroidBot android2 = new AndroidBot(true, false, true);
                     System.out.println("Let`s test me!");
-                    android2.formGen();
+                    android2.formGenerator();
                     android2.move();
-                    android2.talk();
+                    android2.speak();
                     android2.searchNews("bad news");
                     android2.shoot();
                     break;
                 } else if (answer3.equals("c")) {
                     AndroidBot android3 = new AndroidBot(true, false, true);
                     System.out.println("Let`s test me!");
-                    android3.formGen();
+                    android3.formGenerator();
                     android3.move();
-                    android3.talk();
+                    android3.speak();
                     android3.searchNews("both");
                     android3.shoot();
                     break;
                 }else {
                     System.out.println("You`ve pressed wrong key! Try again!");
-                    continue;
                 }
             }
         }else{
